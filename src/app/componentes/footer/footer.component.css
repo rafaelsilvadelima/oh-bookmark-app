@@ -1,0 +1,12 @@
+footer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #2D6DBE;
+    position: fixed;
+    bottom: 0px;
+    height: 8vh;
+}
+footer button i {
+    color: #fff
+}

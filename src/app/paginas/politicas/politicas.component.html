@@ -1,0 +1,28 @@
+<div class="main">
+    <div class="container">
+        <h1>Insira o nome de Usuario</h1>
+        <div class="form">
+            <form #formulario="ngForm">
+                <mat-form-field class="full-width" appearance="outline">
+                    <mat-label>ID:</mat-label>
+                    <input type="text" matInput name="id" [(ngModel)]="usuario.id" readonly>
+                </mat-form-field>
+            </form>
+            <form>
+                <mat-form-field class="full-width" appearance="outline">
+                    <mat-label>Nome de Usuário</mat-label>
+                    <input type="text" matInput name="nome" [(ngModel)]="usuario.nome">
+                </mat-form-field>
+            </form>
+            <div class="button">
+                <div class="upload">
+                <label for="foto"></label>
+                <input type="file" class="upload-photo" (change)="salvarArquivo($event)">
+            </div>
+                <mat-progress-bar mode="indeterminate" value="40" *ngIf="isLoadUpload"></mat-progress-bar>
+                <button mat-raised-button (click)="salvarDados(formulario)">Salvar Dados e Prosseguir</button>
+            </div>
+        </div>
+        <h2 class="msg">Coloque nome e foto a sua escolha, ambas poderão ser alteradas posteriormente.</h2>
+    </div>
+</div>

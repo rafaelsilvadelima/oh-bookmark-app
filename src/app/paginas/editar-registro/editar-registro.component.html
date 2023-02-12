@@ -1,0 +1,46 @@
+<div class="main">
+    <div class="container">
+        <h1>Atualize essa tarefa</h1>
+        <div class="form">
+            <form #formEdit="ngForm">
+                <mat-form-field class="full-width" appearance="outline">
+                    <mat-label>Nome da Obra</mat-label>
+                    <input type="text" matInput name="nome" [(ngModel)]="tarefa.nome" required>
+                </mat-form-field>
+            </form>
+            <form>
+                <mat-form-field class="full-width" appearance="outline">
+                    <mat-label>Episódio</mat-label>
+                    <input type="number" matInput name="episodio" [(ngModel)]="tarefa.episodio" required>
+                </mat-form-field>
+            </form>
+            <form>
+                <mat-form-field class="full-width" appearance="outline">
+                    <mat-label>Temporada</mat-label>
+                    <input type="number" matInput name="temporada" [(ngModel)]="tarefa.temporada">
+                </mat-form-field>
+            </form>
+            <form>
+                <mat-form-field class="full-width" appearance="outline">
+                    <mat-label>Dia de Lançamento</mat-label>
+                    <input type="texto" matInput name="lancamento" [(ngModel)]="tarefa.lancamento">
+                </mat-form-field>
+            </form>
+            <form>
+                <mat-form-field class="full-width" appearance="outline">
+                    <mat-label>Site</mat-label>
+                    <input type="text" matInput name="site" [(ngModel)]="tarefa.site">
+                </mat-form-field>
+            </form>
+            <div class="button">
+                <div class="upload">
+                    <label for="foto"></label>
+                    <input type="file" class="upload-photo" (change)="uploadFile($event)">
+                </div>
+                <mat-progress-bar mode="indeterminate" value="40" *ngIf="isLoadUpload"></mat-progress-bar>
+                <button mat-raised-button (click)="atualizarTarefa(formEdit)">Atualizar Tarefa</button>
+            </div>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>
