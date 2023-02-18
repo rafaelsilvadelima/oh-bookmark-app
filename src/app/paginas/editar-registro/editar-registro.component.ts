@@ -23,7 +23,7 @@ export class EditarRegistroComponent {
     id: '',
     idUsuario: '',
     nome: '',
-    episodio: '',
+    episodio: 0,
     temporada: '',
     lancamento: '',
     site: ''
@@ -41,23 +41,26 @@ export class EditarRegistroComponent {
     this.InicializeCampos();
   }
 
+  value: number | undefined = this.tarefa.episodio
+
   private InicializeCampos(): void {
     this.auth.user.subscribe((User) => {
       this.dados.id = User?.uid as string
-    const id = this.route.snapshot.params["id"];
-    this.tarefasService.buscarTarefasPorId(id).subscribe((retorno) => {
-      this.tarefa = retorno;
+      const id = this.route.snapshot.params["id"];
+      this.tarefasService.buscarTarefasPorId(id).subscribe((retorno) => {
+        this.tarefa = retorno
+        this.value = this.tarefa.episodio
+      })
     })
-  })
   }
 
   public atualizarTarefa(form: NgForm): void {
     if (form.valid) {
       this.tarefa.idUsuario = this.dados.id as string,
-      this.tarefasService.atualizarTarefa(this.tarefa).subscribe(retorno => {
-        this.toastr.success("Atualizado com sucesso.");
-        this.router.navigate(["/paginas/home"]);
-      });
+        this.tarefasService.atualizarTarefa(this.tarefa).subscribe(retorno => {
+          this.toastr.success("Atualizado com sucesso.");
+          this.router.navigate(["/paginas/home"]);
+        });
     }
     else {
       this.toastr.error("Dados inválidos.");
@@ -75,5 +78,16 @@ export class EditarRegistroComponent {
         this.tarefa.imagem = fotoUrl;
       })
     });
+  }
+
+  public incrementValue() {
+    // this.value++;
+  }
+
+  public decreaseValue() {
+    //   if(this.value > 0) {
+    //     this.value--;
+    //   } 
+    // }
   }
 }

@@ -27,21 +27,24 @@ export class RegistroComponent {
   ) {
   }
 
+  value: number = 0;
+
   public tarefa: Tarefas = {
-      id: '',
-      idUsuario: "",
-      nome: "",
-      episodio: "",
-      temporada: "",
-      lancamento:"",
-      site: ""
+    id: "",
+    idUsuario: "",
+    nome: "",
+    episodio: 1,
+    temporada: "",
+    lancamento: "",
+    site: ""
   }
 
   public variavel!: ""
 
   public salvarTarefa(formulario: NgForm): void {
     this.tarefa.idUsuario = this.dados.id as string
-    if(formulario.valid) {
+    this.tarefa.episodio = this.value
+    if (formulario.valid) {
       this.tarefa.imagem = this.imagem
       this.tarefasService.criarTarefa(this.tarefa).subscribe(retorno => {
         this.variavel = retorno.id
@@ -66,7 +69,7 @@ export class RegistroComponent {
   public uploadFile(event: any): void {
     this.isLoadUpload = true;
     const file: File = event.target.files[0];
-    this.tarefasService.uploadFoto(file).subscribe(uploadResult  => {
+    this.tarefasService.uploadFoto(file).subscribe(uploadResult => {
       this.isLoadUpload = false;
       const storageReference = uploadResult.ref;
       const promiseFileUrl = storageReference.getDownloadURL();
@@ -76,13 +79,22 @@ export class RegistroComponent {
     });
   }
 
-  ngOnInit(): void { 
+  ngOnInit(): void {
     this.buscarUID()
   }
 
-    public buscarUID() {
+  public buscarUID() {
     this.auth.user.subscribe((User) => {
-    this.dados.id = User?.uid as string
+      this.dados.id = User?.uid as string
     })
-    }
+  }
+  public incrementValue() {
+    this.value++;
+  }
+
+  public decreaseValue() {
+    if(this.value > 0) {
+      this.value--;
+    } 
+  }
 }

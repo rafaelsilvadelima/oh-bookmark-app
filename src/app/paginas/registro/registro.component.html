@@ -2,31 +2,40 @@
     <div class="container">
         <h1>Resgistre uma nova tarefa</h1>
         <div class="form">
-            <form #formulario="ngForm">
+            <form class="forms" #formulario="ngForm">
                 <mat-form-field class="full-width" appearance="outline">
                     <mat-label>Nome da Obra</mat-label>
                     <input type="text" matInput name="nome" [(ngModel)]="tarefa.nome" required>
                 </mat-form-field>
-            </form>
-            <form>
-                <mat-form-field class="full-width" appearance="outline">
-                    <mat-label>Episódio</mat-label>
-                    <input type="number" matInput name="episodio" [(ngModel)]="tarefa.episodio" required>
-                </mat-form-field>
-            </form>
-            <form>
+
+                <div class="epi">
+                    <button mat-mini-fab aria-label="Example icon button with a menu icon" (click)="decreaseValue()">
+                        <mat-icon>remove</mat-icon>
+                    </button>
+                    <mat-form-field class="inputEpi" appearance="outline">
+                        <mat-label>Episódio</mat-label>
+                        <input type="number" matInput name="value" [(ngModel)]="value" required>
+                    </mat-form-field>
+                    <button mat-mini-fab aria-label="Example icon button with a menu icon"  (click)="incrementValue()">
+                        <mat-icon>add</mat-icon>
+                    </button>
+                </div>
+
                 <mat-form-field class="full-width" appearance="outline">
                     <mat-label>Temporada</mat-label>
                     <input type="number" matInput name="temporada" [(ngModel)]="tarefa.temporada">
                 </mat-form-field>
-            </form>
-            <form>
-                <mat-form-field class="full-width" appearance="outline">
-                    <mat-label>Dia de Lançamento</mat-label>
-                    <input type="texto" matInput name="lancamento" [(ngModel)]="tarefa.lancamento">
+
+                <mat-form-field appearance="outline">
+                    <mat-label>Gênero</mat-label>
+                    <select matNativeControl required name="lancamento" [(ngModel)]="tarefa.lancamento">
+                        <option>Selecione o Gênero</option>
+                        <option value="Livros">Livros</option>
+                        <option value="Quadrinhos">Quadrinhos</option>
+                        <option value="Séries">Séries</option>
+                    </select>
                 </mat-form-field>
-            </form>
-            <form>
+
                 <mat-form-field class="full-width" appearance="outline">
                     <mat-label>Site</mat-label>
                     <input type="text" matInput name="site" [(ngModel)]="tarefa.site">
@@ -34,9 +43,9 @@
             </form>
             <div class="button">
                 <div class="upload">
-                <label for="foto"></label>
-                <input type="file" class="upload-photo" (change)="uploadFile($event)">
-            </div>
+                    <label for="foto"></label>
+                    <input type="file" class="upload-photo" (change)="uploadFile($event)">
+                </div>
                 <mat-progress-bar mode="indeterminate" value="40" *ngIf="isLoadUpload"></mat-progress-bar>
                 <button mat-raised-button (click)="salvarTarefa(formulario)">Salvar Tarefa</button>
             </div>

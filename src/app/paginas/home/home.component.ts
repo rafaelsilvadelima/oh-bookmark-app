@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { AngularFireAuth } from '@angular/fire/compat/auth';
-import { Router } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
 import { Dados } from 'src/app/interfaces/dados';
 import { Tarefas } from 'src/app/interfaces/tarefas';
@@ -16,7 +15,6 @@ export class HomeComponent {
   public checked: boolean = false
 
   constructor(
-    private router: Router,
     private tarefasService: TarefasService,
     private toastr: ToastrService,
     private auth: AngularFireAuth,
@@ -38,8 +36,6 @@ export class HomeComponent {
       this.tarefasService.buscaUsuarioNoBanco(this.dados.id).subscribe(retorno => {
         if (retorno.id == this.dados.id) {
           this.initializeTable()
-        } else if (retorno.id == null){
-          this.router.navigate(['/paginas/registro'])
         }
       })
     })

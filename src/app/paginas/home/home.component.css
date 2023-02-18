@@ -103,7 +103,7 @@ a:link {
 
     #card {
         width: 42vw;
-        min-height: 40vh;
+        min-height: 30vh;
         max-height: auto;
     }
 
@@ -118,11 +118,6 @@ a:link {
 
     .titulo {
         width: 37vw;
-    }
-
-    .cardItens {
-        width: 15vw;
-        min-height: 30vh;
     }
 
 }

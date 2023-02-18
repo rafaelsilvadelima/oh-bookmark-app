@@ -16,9 +16,9 @@ export class FooterComponent {
   ){  }
 
   public sair(): void {
+    this.router.navigate(["/paginas/login"])
     this.authService.sair().subscribe(retorno => {
       this.toastr.success("Até logo!");
-      this.router.navigate(["/paginas/login"])
     })
   }
 
