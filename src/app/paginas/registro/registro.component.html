@@ -1,6 +1,6 @@
 <div class="main">
     <div class="container">
-        <h1>Resgistre uma nova tarefa</h1>
+        <h1>Resgistre uma nova marcação</h1>
         <div class="form">
             <form class="forms" #formulario="ngForm">
                 <mat-form-field class="full-width" appearance="outline">
@@ -47,7 +47,7 @@
                     <input type="file" class="upload-photo" (change)="uploadFile($event)">
                 </div>
                 <mat-progress-bar mode="indeterminate" value="40" *ngIf="isLoadUpload"></mat-progress-bar>
-                <button mat-raised-button (click)="salvarTarefa(formulario)">Salvar Tarefa</button>
+                <button mat-raised-button (click)="salvarTarefa(formulario)">Salvar</button>
             </div>
         </div>
     </div>

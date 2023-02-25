@@ -41,7 +41,7 @@ export class EditarRegistroComponent {
     this.InicializeCampos();
   }
 
-  value: number | undefined = this.tarefa.episodio
+  public value!: number 
 
   private InicializeCampos(): void {
     this.auth.user.subscribe((User) => {
@@ -49,13 +49,14 @@ export class EditarRegistroComponent {
       const id = this.route.snapshot.params["id"];
       this.tarefasService.buscarTarefasPorId(id).subscribe((retorno) => {
         this.tarefa = retorno
-        this.value = this.tarefa.episodio
+        this.value = this.tarefa.episodio as number
       })
     })
   }
 
   public atualizarTarefa(form: NgForm): void {
     if (form.valid) {
+      this.tarefa.episodio = this.value
       this.tarefa.idUsuario = this.dados.id as string,
         this.tarefasService.atualizarTarefa(this.tarefa).subscribe(retorno => {
           this.toastr.success("Atualizado com sucesso.");
@@ -81,13 +82,13 @@ export class EditarRegistroComponent {
   }
 
   public incrementValue() {
-    // this.value++;
+    this.value as number
+    this.value++
   }
 
   public decreaseValue() {
-    //   if(this.value > 0) {
-    //     this.value--;
-    //   } 
-    // }
+    if (this.value > 0) {
+      this.value--
+    }
   }
 }

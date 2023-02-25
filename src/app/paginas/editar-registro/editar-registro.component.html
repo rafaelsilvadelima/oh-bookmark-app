@@ -1,6 +1,6 @@
 <div class="main">
     <div class="container">
-        <h1>Resgistre uma nova tarefa</h1>
+        <h1>Atualizar marcação</h1>
         <div class="form">
             <form class="forms" #formulario="ngForm">
                 <mat-form-field class="full-width" appearance="outline">
@@ -16,7 +16,7 @@
                         <mat-label>Episódio</mat-label>
                         <input type="number" matInput name="value" [(ngModel)]="value" required>
                     </mat-form-field>
-                    <button mat-mini-fab aria-label="Example icon button with a menu icon"  (click)="incrementValue()">
+                    <button mat-mini-fab aria-label="Example icon button with a menu icon" (click)="incrementValue()">
                         <mat-icon>add</mat-icon>
                     </button>
                 </div>
@@ -47,7 +47,7 @@
                     <input type="file" class="upload-photo" (change)="uploadFile($event)">
                 </div>
                 <mat-progress-bar mode="indeterminate" value="40" *ngIf="isLoadUpload"></mat-progress-bar>
-                <button mat-raised-button (click)="atualizarTarefa(formulario)">Salvar Tarefa</button>
+                <button mat-raised-button (click)="atualizarTarefa(formulario)">Atualizar</button>
             </div>
         </div>
     </div>
