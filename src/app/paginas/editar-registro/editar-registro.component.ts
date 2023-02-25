@@ -17,6 +17,8 @@ export class EditarRegistroComponent {
     id: ""
   }
 
+  public checked: boolean = false
+
   public isLoadUpload: boolean = false;
 
   public tarefa: Tarefas = {
@@ -41,7 +43,7 @@ export class EditarRegistroComponent {
     this.InicializeCampos();
   }
 
-  public value!: number 
+  public value!: number
 
   private InicializeCampos(): void {
     this.auth.user.subscribe((User) => {
@@ -90,5 +92,16 @@ export class EditarRegistroComponent {
     if (this.value > 0) {
       this.value--
     }
+  }
+
+  public apagarMarcacao() {
+    this.auth.user.subscribe((User) => {
+      this.dados.id = User?.uid as string
+      const id = this.route.snapshot.params["id"];
+      this.tarefasService.apagarTarefa(id).subscribe((retorno) => {
+        this.toastr.success("Marcação apagada com sucesso.");
+        this.router.navigate(["/paginas/home"]);
+      })
+    })
   }
 }

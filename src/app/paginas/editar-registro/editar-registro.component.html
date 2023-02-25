@@ -5,7 +5,7 @@
             <form class="forms" #formulario="ngForm">
                 <mat-form-field class="full-width" appearance="outline">
                     <mat-label>Nome da Obra</mat-label>
-                    <input type="text" matInput name="nome" [(ngModel)]="tarefa.nome" required>
+                    <input type="text" matInput name="nome" [(ngModel)]="tarefa.nome" required maxlength="25">
                 </mat-form-field>
 
                 <div class="epi">
@@ -35,11 +35,13 @@
                         <option value="Séries">Séries</option>
                     </select>
                 </mat-form-field>
-
-                <mat-form-field class="full-width" appearance="outline">
-                    <mat-label>Site</mat-label>
-                    <input type="text" matInput name="site" [(ngModel)]="tarefa.site">
-                </mat-form-field>
+                <div class="site">
+                    <mat-form-field class="formSite" appearance="outline">
+                        <mat-label>Insira o link do site aqui</mat-label>
+                        <input type="text" matInput name="site" [(ngModel)]="tarefa.site">
+                    </mat-form-field>
+                    <button mat-raised-button><a [href]="[tarefa.site]">Ir</a></button>
+                </div>
             </form>
             <div class="button">
                 <div class="upload">
@@ -49,6 +51,12 @@
                 <mat-progress-bar mode="indeterminate" value="40" *ngIf="isLoadUpload"></mat-progress-bar>
                 <button mat-raised-button (click)="atualizarTarefa(formulario)">Atualizar</button>
             </div>
+        </div>
+        <div class="checked">
+            <mat-checkbox [(ngModel)]="checked" >Marque para apagar essa marcação.</mat-checkbox>
+            <button mat-fab (click)="apagarMarcacao()" *ngIf="checked == true">
+                <mat-icon>delete</mat-icon>
+            </button>
         </div>
     </div>
 </div>
