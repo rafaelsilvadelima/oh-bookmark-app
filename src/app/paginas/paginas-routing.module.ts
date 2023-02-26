@@ -4,6 +4,7 @@ import { GuardsGuard } from '../guards.guard';
 import { EditarRegistroComponent } from './editar-registro/editar-registro.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
+import { PerfilComponent } from './perfil/perfil.component';
 import { PoliticasComponent } from './politicas/politicas.component';
 import { RegistroComponent } from './registro/registro.component';
 
@@ -13,7 +14,8 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'politicas', component: PoliticasComponent, canActivate: [GuardsGuard] },
   { path: 'registro', component: RegistroComponent, canActivate: [GuardsGuard] },
-  { path: 'registro/editar/:id', component: EditarRegistroComponent , canActivate: [GuardsGuard]}
+  { path: 'registro/editar/:id', component: EditarRegistroComponent , canActivate: [GuardsGuard]},
+  { path: 'perfil', component: PerfilComponent , canActivate: [GuardsGuard]},
 ];
 
 @NgModule({

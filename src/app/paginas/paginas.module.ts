@@ -11,6 +11,7 @@ import { MaterialModule } from '../modulos/material/material.module';
 import { PoliticasComponent } from './politicas/politicas.component';
 import { RegistroComponent } from './registro/registro.component';
 import { EditarRegistroComponent } from './editar-registro/editar-registro.component';
+import { PerfilComponent } from './perfil/perfil.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { EditarRegistroComponent } from './editar-registro/editar-registro.compo
     LoginComponent,
     PoliticasComponent,
     RegistroComponent,
-    EditarRegistroComponent
+    EditarRegistroComponent,
+    PerfilComponent
   ],
   imports: [
     CommonModule,
