@@ -1,27 +1,33 @@
-# OhBookmark
+# OhBookmark 
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.3.
+O projeto inicialmente está sendo desenvolvido estilizado para utilização em aparelhos mobile, a responsividade para Desktop está em andamento (Atenção! Projeto em desenvolvimento em seus primeiros estágios, então para um melhor aproveitamento, LEIA A DOCUMENTAÇÂO ABAIXO) [Clique aqui para realizar um passeio pela aplicação](https://oh-bookmark.web.app/paginas/login).
 
-## Development server
+## Descrição
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+O projeto Bookmark tem como foco ser uma aplicação para que o usuário possa realizar o controle de séries, livros e quadrinhos evitando assim, perder páginas, episódios e etc, e assim não se lembrar onde parou. A Aplicação tem foco e pessoas como eu que tenho atualmente cadasdrado em meu perfil 241 quadrinho, 4 livros e 13 séries (oque faz com que seja muito comum eu não me recordar em qual página parei ou em qual episódio estou) rs, mais e você? Quantos obras você acompanha no momento?
 
-## Code scaffolding
+## Concepção inicial para o layout da aplicação
+<img src="arquivos_readme/Component 1 (2).png" alt="Layout">
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Atenção! O projeto está em desenvolvimento então esse layout foi a elaboração inicial e existe a a possibilçidade de alterações serem realizadas.
 
-## Build
+## Fluxograma Elaborado para realização do acesso até a página home e fluxo para os procedimentos do CRUD
+<img src="arquivos_readme/Diagrama sem nome.jpg" alt="Fluxograma">
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Atenção! O projeto está em desenvolvimento então esse fluxograma foi a elaboração inicial para que fosse iniciado o processo de desenvolvimento e existe a a possibilçidade de alterações serem realizadas.
 
-## Running unit tests
+## Software, framwork e outros usados no processo de desenvolvimento.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+O Layout/UX inicial foi realizado no site [FIGMA](https://www.figma.com/).
 
-## Running end-to-end tests
+O fluxograma foi feito no site [Diagrams](https://www.diagrams.net/).
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+O projeto está sendo desenvolvido no framwork [Angular](https://angular.io/).
 
-## Further help
+A parte de armazenamento, banco de dados assim como a authenticação de usuário está construida com [Firebase](https://firebase.google.com/?hl=pt-br).
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Linguagem de programação mais utilizada foi [Typescript](https://www.typescriptlang.org/)
+
+Projeto está em seu processo inicial então futuramente irei preparar para vocês um "readme" mais detalhado. Desde já, Grato!
+
+ O projeto está em desenvolvimento, então ao navegar pela aplicação esteja ciente de que bugs e erros são uma possibilidade.
