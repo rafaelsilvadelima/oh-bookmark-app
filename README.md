@@ -1,22 +1,22 @@
 # OhBookmark 
 
- Atenção! Projeto inicialmente desenvolvido para aparelhos mobiles, responsividade para desktop ainda em andamento, então ao realizar o passeio pela aplicação, use seu aparelho mobile ou utilize o navegador (no desktop) em modo de desenvolvedor mobile (no Google Chrome pressione "CONTROL+SHIFT+I" e depois "CONTROL+SHIFT+M" nessa ordem e boa viagem, aproiveite e LEIA A DOCUMENTAÇÂO ABAIXO) [Clique aqui para realizar um passeio pela aplicação](https://oh-bookmark.web.app/paginas/login).
+ Atenção! Projeto inicialmente desenvolvido para aparelhos mobiles, responsividade para desktop ainda em andamento, então ao realizar o passeio pela aplicação, use seu aparelho mobile ou utilize o navegador (no desktop) em modo de desenvolvedor mobile (no Google Chrome pressione "CONTROL+SHIFT+I" e depois "CONTROL+SHIFT+M" nessa ordem e boa viagem, aproveite e LEIA A DOCUMENTAÇÃO ABAIXO) Clique aqui para realizar um passeio pela aplicação.
 
 ## Descrição
 
- O projeto Bookmark tem como foco ser uma aplicação para que o usuário possa realizar o controle de séries, livros e quadrinhos evitando assim, perder páginas, episódios e etc, e assim não se lembrar onde parou. A Aplicação tem foco e pessoas como eu que tenho atualmente cadasdrado em meu perfil 241 quadrinho, 4 livros e 13 séries (oque faz com que seja muito comum eu não me recordar em qual página parei ou em qual episódio estou) rs, mais e você? Quantos obras você acompanha no momento?
+ O projeto Bookmark tem como foco ser uma aplicação para que o usuário possa realizar o controle de séries, livros e quadrinhos evitando assim, perder páginas, episódios e etc, e assim não se lembrar onde parou. A Aplicação tem foco e pessoas como eu que tenho atualmente cadastrado em meu perfil 241 quadrinho, 4 livros e 13 séries (oque faz com que seja muito comum eu não me recordar em qual página parei ou em qual episódio estou) rs, mais e você? Quantos obras você acompanha no momento?
 
 ## Concepção inicial para o layout da aplicação
 <img src="arquivos_readme/Component 1 (2).png" alt="Layout">
 
- Atenção! O projeto está em desenvolvimento então esse layout foi a elaboração inicial e existe a a possibilçidade de alterações serem realizadas.
+ Atenção! O projeto está em desenvolvimento, então esse layout foi a elaboração inicial e existe a possibilidade de alterações serem realizadas.
 
-## Fluxograma Elaborado para realização do acesso até a página home e fluxo para os procedimentos do CRUD
+## Fluxograma Elaborado para realização do acesso até a página home e fluxo para os procedimentos do CRUD.
 <img src="arquivos_readme/Diagrama sem nome.jpg" alt="Fluxograma">
 
-Atenção! O projeto está em desenvolvimento então esse fluxograma foi a elaboração inicial para que fosse iniciado o processo de desenvolvimento e existe a a possibilçidade de alterações serem realizadas.
+Atenção! O projeto está em desenvolvimento, então esse fluxograma foi a elaboração inicial para que fosse iniciado o processo de desenvolvimento e existe a possibilidade de alterações serem realizadas.
 
-## Software, framwork e outros usados no processo de desenvolvimento.
+## Software, framework e outros usados no processo de desenvolvimento.
 
  O Layout/UX inicial foi realizado no site [FIGMA](https://www.figma.com/).
 
@@ -28,6 +28,4 @@ Atenção! O projeto está em desenvolvimento então esse fluxograma foi a elabo
 
  Linguagem de programação mais utilizada foi [Typescript](https://www.typescriptlang.org/)
 
- Projeto está em seu processo inicial então futuramente irei preparar para vocês um "readme" mais detalhado. Desde já, Grato!
-
- O projeto está em desenvolvimento, então ao navegar pela aplicação esteja ciente de que bugs e erros são uma possibilidade.
+ Projeto está em seu processo inicial, então futuramente irei preparar para vocês um "readme" mais detalhado. Desde já, grato!
