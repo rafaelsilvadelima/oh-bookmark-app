@@ -12,7 +12,7 @@
  Atenção! O projeto está em desenvolvimento, então esse layout foi a elaboração inicial e existe a possibilidade de alterações serem realizadas.
 
 ## Fluxograma Elaborado para realização do acesso até a página home e fluxo para os procedimentos do CRUD.
-<img src="arquivos_readme/Diagrama.png" alt="Fluxograma">
+<img src="arquivos_readme/Diagrama.jpg" alt="Fluxograma">
 
 Atenção! O projeto está em desenvolvimento, então esse fluxograma foi a elaboração inicial para que fosse iniciado o processo de desenvolvimento e existe a possibilidade de alterações serem realizadas.
 
