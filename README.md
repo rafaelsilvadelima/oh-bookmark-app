@@ -1,33 +1,31 @@
 # OhBookmark 
 
-O projeto inicialmente está sendo desenvolvido estilizado para utilização em aparelhos mobile, a responsividade para Desktop está em andamento (Atenção! Projeto em desenvolvimento em seus primeiros estágios, então para um melhor aproveitamento, LEIA A DOCUMENTAÇÂO ABAIXO) [Clique aqui para realizar um passeio pela aplicação](https://oh-bookmark.web.app/paginas/login).
+ Atenção! Projeto inicialmente desenvolvido para aparelhos mobiles, responsividade para desktop ainda em andamento, então ao realizar o passeio pela aplicação, use seu aparelho mobile ou utilize o navegador (no desktop) em modo de desenvolvedor mobile (no Google Chrome pressione "CONTROL+SHIFT+I" e depois "CONTROL+SHIFT+M" nessa ordem e boa viagem, aproveite e LEIA A DOCUMENTAÇÃO ABAIXO) [Clique aqui](oh-bookmark.web.app/paginas/login) para realizar um passeio pela aplicação.
 
 ## Descrição
 
-O projeto Bookmark tem como foco ser uma aplicação para que o usuário possa realizar o controle de séries, livros e quadrinhos evitando assim, perder páginas, episódios e etc, e assim não se lembrar onde parou. A Aplicação tem foco e pessoas como eu que tenho atualmente cadasdrado em meu perfil 241 quadrinho, 4 livros e 13 séries (oque faz com que seja muito comum eu não me recordar em qual página parei ou em qual episódio estou) rs, mais e você? Quantos obras você acompanha no momento?
+ O projeto Bookmark tem como foco ser uma aplicação para que o usuário possa realizar o controle de séries, livros e quadrinhos evitando assim, perder páginas, episódios e etc, e assim não se lembrar onde parou. A Aplicação tem foco e pessoas como eu que tenho atualmente cadastrado em meu perfil 241 quadrinho, 4 livros e 13 séries (oque faz com que seja muito comum eu não me recordar em qual página parei ou em qual episódio estou) rs, mais e você? Quantos obras você acompanha no momento?
 
 ## Concepção inicial para o layout da aplicação
 <img src="arquivos_readme/Component 1 (2).png" alt="Layout">
 
-Atenção! O projeto está em desenvolvimento então esse layout foi a elaboração inicial e existe a a possibilçidade de alterações serem realizadas.
+ Atenção! O projeto está em desenvolvimento, então esse layout foi a elaboração inicial e existe a possibilidade de alterações serem realizadas.
 
-## Fluxograma Elaborado para realização do acesso até a página home e fluxo para os procedimentos do CRUD
-<img src="arquivos_readme/Diagrama sem nome.jpg" alt="Fluxograma">
+## Fluxograma Elaborado para realização do acesso até a página home e fluxo para os procedimentos do CRUD.
+<img src="arquivos_readme/Diagrama.jpg" alt="Fluxograma">
 
-Atenção! O projeto está em desenvolvimento então esse fluxograma foi a elaboração inicial para que fosse iniciado o processo de desenvolvimento e existe a a possibilçidade de alterações serem realizadas.
+Atenção! O projeto está em desenvolvimento, então esse fluxograma foi a elaboração inicial para que fosse iniciado o processo de desenvolvimento e existe a possibilidade de alterações serem realizadas.
 
-## Software, framwork e outros usados no processo de desenvolvimento.
+## Software, framework e outros usados no processo de desenvolvimento.
 
-O Layout/UX inicial foi realizado no site [FIGMA](https://www.figma.com/).
+ O Layout/UX inicial foi realizado no site [FIGMA](https://www.figma.com/).
 
-O fluxograma foi feito no site [Diagrams](https://www.diagrams.net/).
+ O fluxograma foi feito no site [Diagrams](https://www.diagrams.net/).
 
-O projeto está sendo desenvolvido no framwork [Angular](https://angular.io/).
+ O projeto está sendo desenvolvido no framwork [Angular](https://angular.io/).
 
-A parte de armazenamento, banco de dados assim como a authenticação de usuário está construida com [Firebase](https://firebase.google.com/?hl=pt-br).
+ A parte de armazenamento, banco de dados assim como a authenticação de usuário está construida com [Firebase](https://firebase.google.com/?hl=pt-br).
 
-Linguagem de programação mais utilizada foi [Typescript](https://www.typescriptlang.org/)
+ Linguagem de programação mais utilizada foi [Typescript](https://www.typescriptlang.org/)
 
-Projeto está em seu processo inicial então futuramente irei preparar para vocês um "readme" mais detalhado. Desde já, Grato!
-
- O projeto está em desenvolvimento, então ao navegar pela aplicação esteja ciente de que bugs e erros são uma possibilidade.
+ Projeto está em seu processo inicial, então futuramente irei preparar para vocês um "readme" mais detalhado. Desde já, grato!
