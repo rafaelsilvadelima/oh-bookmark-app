@@ -1,6 +1,6 @@
 # OhBookmark 
 
- Atenção! Projeto inicialmente desenvolvido para aparelhos mobiles, responsividade para desktop ainda em andamento, então ao realizar o passeio pela aplicação, use seu aparelho mobile ou utilize o navegador (no desktop) em modo de desenvolvedor mobile (no Google Chrome pressione "CONTROL+SHIFT+I" e depois "CONTROL+SHIFT+M" nessa ordem e boa viagem, aproveite e LEIA A DOCUMENTAÇÃO ABAIXO) Clique aqui para realizar um passeio pela aplicação.
+ Atenção! Projeto inicialmente desenvolvido para aparelhos mobiles, responsividade para desktop ainda em andamento, então ao realizar o passeio pela aplicação, use seu aparelho mobile ou utilize o navegador (no desktop) em modo de desenvolvedor mobile (no Google Chrome pressione "CONTROL+SHIFT+I" e depois "CONTROL+SHIFT+M" nessa ordem e boa viagem, aproveite e LEIA A DOCUMENTAÇÃO ABAIXO) [Clique aqui](oh-bookmark.web.app/paginas/login) para realizar um passeio pela aplicação.
 
 ## Descrição
 
