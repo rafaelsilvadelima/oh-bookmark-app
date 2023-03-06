@@ -1,71 +1,152 @@
-#login-container {
-    height: auto;
-    width: 100%;
-    display: flex;
-    justify-content: center;
+@media screen and (max-width: 767px) {
+    #login-container {
+        min-height: 90vh;
+        max-height: auto;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    #login-container h1 {
+        font-size: 4vh;
+        padding-bottom: 2vh;
+    }
+
+    .login-form {
+        padding-top: 2vh;
+        width: clamp(300px, 90%, 800px);
+        background: #FFFFFF;
+        border-radius: 30px;
+        box-shadow: 0 0 30px #a8a4a4;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 85vw;
+        height: 70vh;
+        margin-top: 9vh;
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        width: 75vw;
+        height: auto;
+    }
+
+    .login-form button {
+        width: 100%;
+        height: 10vh;
+        background-color: #6B98F1;
+        color: #FFFFFF;
+        border-radius: 10px;
+        border: none;
+        box-shadow: 0 0 10px #7b7b7b;
+        font-size: 5vw;
+    }
+
+    mat-form-field {
+        width: 74vw;
+        margin-top: 2vh;
+    }
+
+    .google {
+        margin-bottom: 3vh;
+    }
+
+    .entrar {
+        margin-bottom: 3vh;
+    }
+
+    #login-container span a {
+        text-decoration: none;
+        font-weight: bold;
+        color: #6A6A6A;
+    }
+
+    .login-form input,
+    .login-form button {
+        font-size: 5vw;
+    }
+
+    .google button img {
+        width: 9vw;
+    }
 }
 
-#login-container h1 {
-    font-size: 4vh;
-    padding-bottom: 2vh;
-}
+@media screen and (min-width: 768px) {
+    #login-container {
+        height: auto;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding-top: 10vh;
+        padding-bottom: 10vh;
+    }
 
-.login-form {
-    padding-top: 2vh;
-    width: clamp(300px, 90%, 800px);
-    background: #FFFFFF;
-    border-radius: 30px;
-    box-shadow: 0 0 30px #a8a4a4;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 85vw;
-    height: 70vh;
-    margin-top: 9vh;
-}
+    #login-container h1 {
+        font-size: 4vh;
+        padding-bottom: 2vh;
+    }
 
-.form {
-    display: flex;
-    flex-direction: column;
-    width: 75vw;
-    height: 100%;
-}
+    .login-form {
+        width: 50%;
+        background: #FFFFFF;
+        border-radius: 30px;
+        box-shadow: 0 0 30px #a8a4a4;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        margin-top: 5vh;
+        padding: 5vh;
+    }
 
-.login-form button {
-    width: 100%;
-    height: 60px;
-    background-color: #6B98F1;
-    color: #FFFFFF;
-    border-radius: 10px;
-    border: none;
-    box-shadow: 0 0 10px #7b7b7b;
-    font-size: 10vw;
-}
+    .form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
 
-mat-form-field {
-    width: 74vw;
-    margin-top: 2vh;
-}
+    .login-form button {
+        width: 100%;
+        height: 60px;
+        background-color: #6B98F1;
+        color: #FFFFFF;
+        border-radius: 10px;
+        border: none;
+        box-shadow: 0 0 10px #7b7b7b;
+        font-size: 2vh;
+        margin-top: 2vh;
+    }
 
-.google {
-    margin-bottom: 3vh;
-}
+    mat-form-field {
+        width: 100%;
+        margin-top: 2vh;
+    }
 
-.entrar {
-    margin-bottom: 3vh;
-}
+    .google {
+        margin-bottom: 3vh;
+    }
 
-#login-container span a {
-    text-decoration: none;
-    font-weight: bold;
-    color: #6A6A6A;
-}
+    .entrar {
+        margin-bottom: 3vh;
+    }
 
-.login-form input,
-.login-form button {
-    font-size: 5vw;
-}
+    #login-container span a {
+        text-decoration: none;
+        font-weight: bold;
+        color: #6A6A6A;
+    }
 
-.google button img {
-    width:9vw;
+    .login-form input,
+    .login-form button {
+        font-size: 2vh;
+    }
+
+    .google button img {
+        width: 4vh;
+        height: auto;
+        margin-right: 1vw;
+    }
 }
