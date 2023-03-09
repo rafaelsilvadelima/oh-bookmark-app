@@ -16,6 +16,10 @@
 
 Atenção! O projeto está em desenvolvimento, então esse fluxograma foi a elaboração inicial para que fosse iniciado o processo de desenvolvimento e existe a possibilidade de alterações serem realizadas.
 
+## Exemplo em gif (clique na imagem para iniciar o gif).
+
+<img src="arquivos_readme/mobile_bokkmark.gif" alt="Layout">
+
 ## Software, framework e outros usados no processo de desenvolvimento.
 
  O Layout/UX inicial foi realizado no site [FIGMA](https://www.figma.com/).
