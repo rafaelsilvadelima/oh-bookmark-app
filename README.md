@@ -6,6 +6,8 @@
 
  O projeto Bookmark tem como foco ser uma aplicação para que o usuário possa realizar o controle de séries, livros e quadrinhos evitando assim, perder páginas, episódios e etc, e assim não se lembrar onde parou. A Aplicação tem foco e pessoas como eu que tenho atualmente cadastrado em meu perfil 241 quadrinho, 4 livros e 13 séries (oque faz com que seja muito comum eu não me recordar em qual página parei ou em qual episódio estou) rs, mais e você? Quantos obras você acompanha no momento?
 
+<img src="arquivos_readme/bookmark_banner.png" alt="Layout">
+
 ## Concepção inicial para o layout da aplicação
 <img src="arquivos_readme/Component 1 (2).png" alt="Layout">
 
