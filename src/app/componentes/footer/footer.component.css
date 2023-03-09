@@ -2,11 +2,11 @@ footer {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    background-color: #2D6DBE;
+    background-color: #1F1D2B;
     position: fixed;
     bottom: 0px;
     height: 8vh;
 }
 footer button i {
-    color: #fff
+    color: #B7B3BD;
 }

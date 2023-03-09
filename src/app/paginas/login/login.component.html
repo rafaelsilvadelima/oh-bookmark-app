@@ -1,14 +1,14 @@
 <app-header></app-header>
-<div id="login-container">
-    <div class="login-form">
+<section id="login-container">
+    <main class="login-form">
         <h1>Login</h1>
-        <div class="form">
-            <div class="google">
+        <section class="form">
+            <section class="google">
                 <button (click)="entrarComGoogle()">
                     <img src="assets/img/iconGoogle.png" alt="Logo Google">
                 </button>
-            </div>
-            <div class="emailSenha">
+            </section>
+            <section class="emailSenha">
                 <form [formGroup]="formulario">
                     <mat-form-field class="email" class="full-width" appearance="outline">
                         <mat-label>Email</mat-label>
@@ -21,7 +21,7 @@
                 </form>
                 <button class="entrar" type="submit">Entrar</button>
                 <span>Ainda não é cadastrado? <a routerLink="#" (click)="aviso()">Cadastre-se</a></span>
-            </div>
-        </div>
-    </div>
-</div>
+            </section>
+        </section>
+    </main>
+</section>

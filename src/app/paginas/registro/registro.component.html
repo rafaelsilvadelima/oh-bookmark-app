@@ -1,14 +1,14 @@
-<div class="main">
-    <div class="container">
+<main class="main">
+    <section class="container">
         <h1>Resgistre uma nova marcação</h1>
-        <div class="form">
+        <section class="form">
             <form class="forms" #formulario="ngForm">
                 <mat-form-field class="full-width" appearance="outline">
                     <mat-label>Nome da Obra</mat-label>
                     <input type="text" matInput name="nome" [(ngModel)]="tarefa.nome" required>
                 </mat-form-field>
 
-                <div class="epi">
+                <section class="epi">
                     <button mat-mini-fab aria-label="Example icon button with a menu icon" (click)="decreaseValue()">
                         <mat-icon>remove</mat-icon>
                     </button>
@@ -19,7 +19,7 @@
                     <button mat-mini-fab aria-label="Example icon button with a menu icon" (click)="incrementValue()">
                         <mat-icon>add</mat-icon>
                     </button>
-                </div>
+                </section>
 
                 <mat-form-field class="full-width" appearance="outline">
                     <mat-label>Temporada</mat-label>
@@ -40,15 +40,15 @@
                     <input type="text" matInput name="site" [(ngModel)]="tarefa.site">
                 </mat-form-field>
             </form>
-            <div class="button">
-                <div class="upload">
+            <section class="button">
+                <section class="upload">
                     <label for="foto"></label>
                     <input type="file" class="upload-photo" (change)="uploadFile($event)">
-                </div>
+                </section>
                 <mat-progress-bar mode="indeterminate" value="40" *ngIf="isLoadUpload"></mat-progress-bar>
                 <button mat-raised-button (click)="salvarTarefa(formulario)">Salvar</button>
-            </div>
-        </div>
-    </div>
-</div>
+            </section>
+        </section>
+    </section>
+</main>
 <app-footer></app-footer>

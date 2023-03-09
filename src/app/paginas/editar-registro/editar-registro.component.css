@@ -7,6 +7,7 @@
     background-repeat: no-repeat;
     display: flex;
     justify-content: center;
+    background-color: #8F869E;
 }
 
 .container {
@@ -20,24 +21,24 @@
 
 h1 { 
     width: 90vw;
-    color: #fff;
+    color: #B7B3BD;
     font-size: 3vh;
     height: 6vh;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 2vh;
-    background-color: #2D6DBE;
+    background-color: #1F1D2B;
     border-radius: 20px;
 }
 
 .form {
     width: 90vw;
-    background-color: #d3e5fc;
+    background-color: #B7B3BD;
     display: flex;
     align-items: center;
     flex-direction: column;
-    border: solid #a5bad4;
+    border: solid #1F1D2B;
     border-radius: 10px;
     padding: 4vw 0 4vw 0;
 } 
@@ -58,7 +59,7 @@ h1 {
 }
 
 .epi button {
-    background-color: #2D6DBE;
+    background-color: #1F1D2B;
 }
 
 .inputEpi {
@@ -78,14 +79,14 @@ mat-form-field {
 
 .button button {
     margin-top: 3vh;
-    background-color: #2D6DBE;
-    color: white;
+    background-color: #1F1D2B;
+    color: #B7B3BD;
 }
 
 .button .upload-photo .input {
     margin-top: 3vh;
-    background-color: #2D6DBE;
-    color: white;
+    background-color: #1F1D2B;
+    color: #B7B3BD;
 }
 
 .checked {
@@ -115,11 +116,11 @@ mat-form-field {
 }
 
 .site button{
-    background-color: #2D6DBE;
+    background-color: #1F1D2B;
     height: 70%;
 }
 
 .site button a {
     text-decoration: none;
-    color: #fff;
+    color: #B7B3BD;
 }

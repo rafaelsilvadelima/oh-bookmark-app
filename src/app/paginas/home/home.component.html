@@ -1,22 +1,22 @@
 <app-header></app-header>
-<div class="container">
-    <div class="main">
-        <div id="card" class="table-container mat-elevation-z8" tabindex="0" *ngFor="let tarefa of tarefas">
+<section class="container">
+    <main class="main">
+        <article id="card" class="table-container mat-elevation-z8" tabindex="0" *ngFor="let tarefa of tarefas">
             <a [routerLink]="['/paginas/registro/editar/', tarefa.id]">
-                <div class="cardItens">
+                <section class="cardItens">
                     <img [src]=" tarefa.imagem || 'src/assets/img/img.jpg' ">
                     <h2 class="titulo">{{tarefa.nome}}</h2>
                     <h3 class="subtitulo">Epi: {{tarefa.episodio}}</h3>
-                </div>
+                </section>
             </a>
-        </div>
-        <div id="card" class="table-container mat-elevation-z8" tabindex="0">
+        </article>
+        <section id="card" class="table-container mat-elevation-z8" tabindex="0">
             <a routerLink="/paginas/registro">
-                <div class="add">
-                    <img src="https://cdn-icons-png.flaticon.com/512/1265/1265780.png">
-                </div>
+                <section class="add">
+                    <p>+</p>
+                </section>
             </a>
-        </div>
-    </div>
-</div>
+        </section>
+    </main>
+</section>
 <app-footer></app-footer>

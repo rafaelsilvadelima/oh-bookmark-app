@@ -1,10 +1,10 @@
 mat-toolbar {
     width: 100%;
     height: 10vh;
-    background-color: #2D6DBE;
+    background-color: #1F1D2B;
 }
 
-mat-toolbar span {
-    color: #ffffff;
+header {
+    color: #B7B3BD;
     font-size: 4vh;
 }

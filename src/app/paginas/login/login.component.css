@@ -5,6 +5,7 @@
         width: 100%;
         display: flex;
         justify-content: center;
+        background-color: #8F869E;
     }
 
     #login-container h1 {
@@ -15,7 +16,7 @@
     .login-form {
         padding-top: 2vh;
         width: clamp(300px, 90%, 800px);
-        background: #FFFFFF;
+        background: #e3deea;
         border-radius: 30px;
         box-shadow: 0 0 30px #a8a4a4;
         display: flex;
@@ -23,7 +24,7 @@
         align-items: center;
         width: 85vw;
         height: 70vh;
-        margin-top: 9vh;
+        margin-top: 5vh;
     }
 
     .form {
@@ -31,13 +32,14 @@
         flex-direction: column;
         width: 75vw;
         height: auto;
+        background-color: #e3deea;
     }
 
     .login-form button {
         width: 100%;
         height: 10vh;
-        background-color: #6B98F1;
-        color: #FFFFFF;
+        background-color: #1F1D2B;
+        color: #B7B3BD;
         border-radius: 10px;
         border: none;
         box-shadow: 0 0 10px #7b7b7b;
@@ -79,8 +81,9 @@
         width: 100%;
         display: flex;
         justify-content: center;
-        padding-top: 10vh;
+        padding-top: 6vh;
         padding-bottom: 10vh;
+        background-color: #8F869E;
     }
 
     #login-container h1 {
@@ -90,15 +93,14 @@
 
     .login-form {
         width: 50%;
-        background: #FFFFFF;
+        background: #e3deea;
         border-radius: 30px;
         box-shadow: 0 0 30px #a8a4a4;
         display: flex;
         flex-direction: column;
         align-items: center;
         height: auto;
-        margin-top: 5vh;
-        padding: 5vh;
+        padding: 4vh 3vh;
     }
 
     .form {
@@ -106,13 +108,15 @@
         flex-direction: column;
         width: 100%;
         height: auto;
+        background-color: #e3deea;
+
     }
 
     .login-form button {
         width: 100%;
         height: 60px;
-        background-color: #6B98F1;
-        color: #FFFFFF;
+        background-color: #1F1D2B;
+        color: #B7B3BD;
         border-radius: 10px;
         border: none;
         box-shadow: 0 0 10px #7b7b7b;
@@ -149,4 +153,8 @@
         height: auto;
         margin-right: 1vw;
     }
+}
+
+h1 {
+    color: #1F1D2B;
 }

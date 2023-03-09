@@ -1,14 +1,14 @@
-<div class="main">
-    <div class="container">
+<main class="main">
+    <section class="container">
         <h1>Atualizar marcação</h1>
-        <div class="form">
+        <section class="form">
             <form class="forms" #formulario="ngForm">
                 <mat-form-field class="full-width" appearance="outline">
                     <mat-label>Nome da Obra</mat-label>
                     <input type="text" matInput name="nome" [(ngModel)]="tarefa.nome" required maxlength="25">
                 </mat-form-field>
 
-                <div class="epi">
+                <section class="epi">
                     <button mat-mini-fab aria-label="Example icon button with a menu icon" (click)="decreaseValue()">
                         <mat-icon>remove</mat-icon>
                     </button>
@@ -19,7 +19,7 @@
                     <button mat-mini-fab aria-label="Example icon button with a menu icon" (click)="incrementValue()">
                         <mat-icon>add</mat-icon>
                     </button>
-                </div>
+                </section>
 
                 <mat-form-field class="full-width" appearance="outline">
                     <mat-label>Temporada</mat-label>
@@ -35,29 +35,29 @@
                         <option value="Séries">Séries</option>
                     </select>
                 </mat-form-field>
-                <div class="site">
+                <section class="site">
                     <mat-form-field class="formSite" appearance="outline">
                         <mat-label>Insira o link do site aqui</mat-label>
                         <input type="text" matInput name="site" [(ngModel)]="tarefa.site">
                     </mat-form-field>
                     <button mat-raised-button><a [href]="[tarefa.site]">Ir</a></button>
-                </div>
+                </section>
             </form>
-            <div class="button">
-                <div class="upload">
+            <section class="button">
+                <section class="upload">
                     <label for="foto"></label>
                     <input type="file" class="upload-photo" (change)="uploadFile($event)">
-                </div>
+                </section>
                 <mat-progress-bar mode="indeterminate" value="40" *ngIf="isLoadUpload"></mat-progress-bar>
                 <button mat-raised-button (click)="atualizarTarefa(formulario)">Atualizar</button>
-            </div>
-        </div>
-        <div class="checked">
+            </section>
+        </section>
+        <section class="checked">
             <mat-checkbox [(ngModel)]="checked" >Marque para apagar essa marcação.</mat-checkbox>
             <button mat-fab (click)="apagarMarcacao()" *ngIf="checked == true">
                 <mat-icon>delete</mat-icon>
             </button>
-        </div>
-    </div>
-</div>
+        </section>
+    </section>
+</main>
 <app-footer></app-footer>

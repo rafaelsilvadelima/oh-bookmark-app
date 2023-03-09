@@ -14,7 +14,7 @@
 .main {
     height: 100%;
     width: 100%;
-
+    background-color: #8F869E;
     background-position: center top;
     background-size: contain ;
     background-repeat: no-repeat;
@@ -31,17 +31,17 @@ h1 {
     justify-content: center;
     align-items: center;
     margin-bottom: 3vh;
-    background-color: #2D6DBE;
+    background-color: #1F1D2B;
     border-radius: 10px;
 }
 
 .form {
     width: 90vw;
-    background-color: #d3e5fc;
+    background-color: #B7B3BD;
     display: flex;
     align-items: center;
     flex-direction: column;
-    border: solid #a5bad4;
+    border: solid #1F1D2B;
     border-radius: 10px;
     padding: 4vw 0 4vw 0;
 } 
@@ -59,18 +59,18 @@ mat-form-field {
 
 .button button {
     margin-top: 3vh;
-    background-color: #2D6DBE;
+    background-color: #1F1D2B;
     color: white;
 }
 
 .button .upload-photo .input {
     margin-top: 3vh;
-    background-color: #2D6DBE;
+    background-color: #1F1D2B;
     color: white;
 }
 
 .msg {
     margin-top: 3vh;
     width: 80vw;
-    color: rgb(201, 55, 55);
+    color: #1F1D2B;
 }
