@@ -5,7 +5,8 @@
     padding: 10vh 0 10vh 0;
     display: flex;
     justify-content: center;
-    background-image: url(src\assets\img\background_mid.png);
+    background-color: #1F1D2B;
+    background-image: url(src\assets\img\background_mid.jpeg);
     background-position: center top;
     background-size: contain;
     background-repeat: repeat;
